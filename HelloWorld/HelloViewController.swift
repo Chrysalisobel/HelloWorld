@@ -10,11 +10,9 @@ import UIKit
 
 class HelloViewController: UIViewController {
 
-    // DECLARE VARIABLES
-    var greetingLabel: UILabel!
-    var greetButton: UIButton!
-    var byeButton: UIButton!
-    var backButton: UIButton!
+    @IBOutlet weak var greetButton: UIButton!
+    @IBOutlet weak var greetingLabel: UILabel!
+    @IBOutlet weak var byeButton: UIButton!
     
     //weak var greetingLabel: UILabel!
     //weak var greetButton: UIButton!
@@ -24,7 +22,8 @@ class HelloViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // self.view.backgroundColor = UIColor.yellowColor()
-                
+ 
+        /*
         // TITLE
         let label: UILabel = UILabel(frame: CGRect(x: 16, y: 16, width: UIScreen.mainScreen().bounds.size.width - 32, height: 44))
         label.textAlignment = .Center;
@@ -58,7 +57,8 @@ class HelloViewController: UIViewController {
         byeButton.layer.cornerRadius = 5
         byeButton.layer.borderWidth = 1
         byeButton.layer.borderColor = UIColor.blackColor().CGColor
-        
+
+       */
             
     }
 
