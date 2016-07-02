@@ -20,8 +20,7 @@ class HelloViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = UIColor.yellowColor()
-        
-        
+                
         // TITLE
         let label: UILabel = UILabel(frame: CGRect(x: 16, y: 16, width: UIScreen.mainScreen().bounds.size.width - 32, height: 44))
         label.textAlignment = .Center;
