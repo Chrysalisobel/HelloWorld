@@ -13,33 +13,27 @@ class HelloViewController: UIViewController {
 
     // DECLARE VARIABLES
     weak var greetingLabel: UILabel!
-    weak var descriptionLabel: UILabel!
     weak var greetButton: UIButton!
     weak var byeButton: UIButton!
+    weak var backButton: UIButton!
 
-        override func viewDidLoad() {
+    override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = UIColor.yellowColor()
-            
+        
+        
         // TITLE
         let label: UILabel = UILabel(frame: CGRect(x: 16, y: 16, width: UIScreen.mainScreen().bounds.size.width - 32, height: 44))
-        label.text = "Greetings earthlings."
-        label.textColor = UIColor.blackColor()
-        label.font = UIFont.systemFontOfSize(40)
-        self.view.addSubview(label)
-        self.greetingLabel = label
-        
-        // DESCRIPTION
-        let description: UILabel = UILabel(frame: CGRect(x: 16, y: 16, width: UIScreen.mainScreen().bounds.size.width - 32, height: 44))
-        label.text = "Click on the buttons below."
-        label.textColor = UIColor.blackColor()
-        label.font = UIFont.systemFontOfSize(15)
-        self.view.addSubview(label)
-        self.descriptionLabel = description
+        label.textAlignment = .Center;
+            label.text = "Greetings earthlings. 👽"
+            label.textColor = UIColor.blackColor()
+            label.font = UIFont.systemFontOfSize(25)
+            self.view.addSubview(label)
+            self.greetingLabel = label
 
         // BUTTON 01 - Hi
         let greetButton: UIButton = UIButton(frame: CGRect(x: 16, y: CGRectGetMaxY(label.frame), width: (UIScreen.mainScreen().bounds.size.width - 32) / 2, height: 30))
-        greetButton.backgroundColor = UIColor.greenColor()
+        greetButton.backgroundColor = UIColor.blackColor()
         greetButton.setTitle("Hi", forState: UIControlState.Normal)
         greetButton.addTarget(self, action: "greet:", forControlEvents: UIControlEvents.TouchUpInside)
         self.view.addSubview(greetButton)
@@ -47,11 +41,13 @@ class HelloViewController: UIViewController {
             
         // BUTTON 02 - Bye
         let byeButton: UIButton = UIButton(frame: CGRect(x: CGRectGetMaxX(greetButton.frame), y: greetButton.frame.origin.y, width: greetButton.frame.size.width, height: greetButton.frame.size.height))
-        byeButton.backgroundColor = UIColor.lightGrayColor()
+        byeButton.backgroundColor = UIColor.blackColor()
         byeButton.setTitle("Bye", forState: UIControlState.Normal)
         byeButton.addTarget(self, action: "greet:", forControlEvents: UIControlEvents.TouchUpInside)
         self.view.addSubview(byeButton)
         self.byeButton = byeButton
+            
+            
     }
 
     override func didReceiveMemoryWarning() {
@@ -71,9 +67,9 @@ class HelloViewController: UIViewController {
 
     @IBAction func greet(sender: AnyObject) {
         if (sender as! UIButton) == self.greetButton {
-            self.greetingLabel.text = "Oh hi."
+            self.greetingLabel.text = "Vulcan salute! 🖖🏽"
         } else {
-            self.greetingLabel.text = "Fine. Kbye."
+            self.greetingLabel.text = "Kbye. 😒"
         }
     }
 }
