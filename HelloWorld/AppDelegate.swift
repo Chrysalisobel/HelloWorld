@@ -2,8 +2,7 @@
 //  AppDelegate.swift
 //  HelloWorld
 //
-//  Credits to the original source template by Li Theen Kok on 19/03/2016.
-//  Remediated by Ayisha Rahman on 02/07/2016.
+//  Credits Ayisha Rahman on 02/07/2016.
 //  Copyright © 2016 Apptivity Lab. All rights reserved.
 //
 
@@ -16,9 +15,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-        self.window = UIWindow()
-        self.window?.makeKeyAndVisible()
-        self.window?.rootViewController = HelloViewController()
+        // self.window = UIWindow()
+        // self.window?.makeKeyAndVisible()
+        // self.window?.rootViewController = HelloViewController()
 
         return true
     }
