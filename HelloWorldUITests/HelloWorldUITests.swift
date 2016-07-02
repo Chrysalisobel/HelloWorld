@@ -2,7 +2,8 @@
 //  HelloWorldUITests.swift
 //  HelloWorldUITests
 //
-//  Created by Li Theen Kok on 19/03/2016.
+//  Credits to the original source template by Li Theen Kok on 19/03/2016.
+//  Remediated by Ayisha Rahman on 02/07/2016.
 //  Copyright © 2016 Apptivity Lab. All rights reserved.
 //
 
